@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Safae Lhazmir</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Safae Lhazmir</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Picture1.png" alt="Safae lhazmir profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Safae Lhazmir</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En savoir plus </p>
+      <h1 class="title">Sur Moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <div class="about-containers-about">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Doctorat en Informatique </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Certifications</h3>
+              <p>•	Professional Data Scientist, Datacamp<br />•	PowerBi Data Analyst Associate, Microsoft</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-details-container">
+
+            <p>
+              Passionnée par la data science, je suis animée par un profond intérêt pour l'exploration et l'analyse de données 
+              complexes. Mon parcours académique et professionnel m'a permis de développer une solide expertise en modélisation,
+               en résolution de problèmes et en création de solutions innovantes basées sur les données. 
+               Avec une aptitude naturelle à apprendre rapidement et une curiosité insatiable pour les nouvelles technologies, 
+               je suis constamment en quête de défis stimulants.
+            </p>
+            <br>
+            <p>
+              Mon expérience en recherche m'a apporté des compétences avancées dans la manipulation de grandes 
+              quantités de données, l'application d'algorithmes de machine learning et la réalisation d'analyses 
+              approfondies. Je suis particulièrement enthousiaste à l'idée de collaborer au sein d'équipes dynamiques
+              pour créer des analyses et des visualisations percutantes, soutenant des décisions stratégiques
+              éclairées et des initiatives basées sur les données.
+            </p>
+            <br>
+            <p>
+              À travers ce portfolio, je vous invite à découvrir mes projets récents qui démontrent ma capacité à 
+              transformer des données brutes en insights précieux, à concevoir des modèles prédictifs robustes et 
+              à produire des visualisations claires et impactantes.
+            </p>
+         
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    
+    <section id="projects">
+      <p class="section__text__p1">Parcourir mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="container_test">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Segmetation clientèle: Quel type êtes vous</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SafaeLh/client-segmentation.git', '_blank')"
+               
+              >
+                Github
+              </button>
+            
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Explorer les tendances et sentiments derrière les vidéos de crimes YouTube</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SafaeLh/yt_video_crime_analysis.git', '_blank')"
+              >
+                Github
+              </button>
+            
+            </div>
+          </div>
+        </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Trouvez votre article scientifique</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/SafaeLh/research_papers.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://kg-research-ai-papers.streamlit.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Prendre contact</p>
+      <h1 class="title">Me contacter</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">lhazmir.safae@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Safae Lhazmir. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
